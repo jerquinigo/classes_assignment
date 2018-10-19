@@ -1,7 +1,5 @@
-Jonathan Erquinigo
-# Class Exercises
-
-1.
+//Jonathan Erquinigo
+/*1.
   * Create a Human class that takes in a name and age.
   * Add the function `ageOneYear` that ages the human.
   * Add the function `eating`, that logs "mmm, mmm, mmm, I'm love'n it".
@@ -9,30 +7,32 @@ Jonathan Erquinigo
     * console log your humans age
     * call ageOneYear on your human
     * console log their age again.
-    * call eating on your human.
+    * call eating on your human.*/
 
-    class Human {
-    constructor(name,age){
-      this.name = name;
-      this.age = age;
-      };
-    ageOneYear(){
-      this.age++
-      return this.age++
-      };
+class Human {
+constructor(name,age){
+  this.name = name;
+  this.age = age;
+  };
+ageOneYear(){
+  this.age++
+  return this.age++
+  };
 
-    eating(){
-      return "mmm, mmm, mmm, I'm love'n it"
-      };
+eating(){
+  return "mmm, mmm, mmm, I'm love'n it"
+  };
 
-    };
+};
 
-    let jonathan = new Human("Jonathan",26);
-    console.log(jonathan.age)
-    console.log(jonathan.ageOneYear())
-    console.log(jonathan.age)
-    console.log(jonathan.eating())
-2.
+let jonathan = new Human("Jonathan",26);
+console.log(jonathan.age)
+console.log(jonathan.ageOneYear())
+console.log(jonathan.age)
+console.log(jonathan.eating())
+
+
+/*2.
 Write a class Vector that represents a vector in two-dimensional space.
 It takes two number arguments: `x` and `y` parameters, which it should be saved to properties of the same name.
 
@@ -53,7 +53,7 @@ console.log(v1.minus(v2));
 var v3 = new Vector(3, 4)
 console.log(v3.getLength());
 // => 5
-```
+```*/
 
 class Vector {
   constructor(x,y){
@@ -78,7 +78,6 @@ getLength(vector){
 
   };
 
-
 };
 
 
@@ -89,3 +88,12 @@ let v3 = new Vector(3, 4)
 console.log(v1.plus(v2))
 console.log(v1.minus(v2))
 console.log(v3.getLength());
+//console.log(v1.plus(v2));
+// // => Vector {x: 3, y: 5}
+// console.log(v1.minus(v2));
+// // => Vector {x: -1, y: -1}
+//
+// var v3 = new Vector(3, 4)
+// console.log(v3.getLength());
+// => 5
+//console.log(v2)
